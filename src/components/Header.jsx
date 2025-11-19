@@ -1,13 +1,14 @@
 // src/components/Header.js
 import React, { useState } from 'react';
 import { Link, Menu, X } from 'lucide-react'; 
+import logoImage from '../assets/image1.png';
 
 const Header = () => {
   // State to manage the visibility of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '/home' },
+    { name: 'Home', href: '/' },
     { name: 'How It Works', href: '#how-it-works' }, // Added IDs for scrolling
     { name: 'Properties', href: '#properties' },
     { name: 'FAQs', href: '#faq' },
@@ -24,8 +25,8 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-10">
 
         {/* 1. Logo: GlobalChain Property (using custom colors) */}
-        <div className="text-2xl font-bold text-[#222222] tracking-tight">
-          GlobalChain <span className="text-[#DEC05F]">Property</span>
+        <div className="p-4">
+          <img src={logoImage} alt="" className='w-50 h-50 top-0 absolute left-0 mt-[-70px]' />
         </div>
 
         {/* 2. Desktop Navigation (Hidden on Mobile, shown on Desktop) */}
@@ -89,16 +90,17 @@ const Header = () => {
               </a>
             ))}
             {/* Wallet button placed at the bottom of the mobile menu for prominence */}
-            <button 
+            <a
+              href='/waitlist'
               className="
-                mt-4 w-full bg-[#DEC05F] text-white font-semibold 
+                mt-4 w-full bg-[#DEC05F] text-white text-center font-semibold 
                 py-2.5 rounded-full
                 shadow-md shadow-[#DEC05F]/30 
-                transition duration-300 hover:scale-[0.99]
+                transition duration-300 hover:scale-102
               "
             >
-              Connect Wallet
-            </button>
+              Join Waitlist
+            </a>
           </nav>
         </div>
       )}
