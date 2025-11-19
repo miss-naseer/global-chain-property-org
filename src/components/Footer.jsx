@@ -17,12 +17,11 @@ const socialLinks = [
   { icon: Instagram, href: '#instagram' },
 ];
 
-// src/components/Footer.js
-// ... (imports and data defined above) ...
+
 
 const Footer = () => {
   return (
-    // Deep [#222222] background for a luxurious contrast
+
     <footer className="bg-[#222222] text-white py-16 md:py-20">
       <div className="container mx-auto px-6 md:px-10">
         

@@ -1,4 +1,3 @@
-// src/components/FAQ.js
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
@@ -55,8 +54,8 @@ const FAQ = () => {
                 transition-all duration-500 ease-in-out
                 animate-fade-in-up
                 ${openIndex === index 
-                  ? 'shadow-xl shadow-[#DEC05F]/50 border-[#DEC05F]' // Active/Glow State
-                  : 'hover:shadow-lg hover:border-[#DEC05F]/70' // Hover State
+                  ? 'shadow-xl shadow-[#DEC05F]/50 border-[#DEC05F]' 
+                  : 'hover:shadow-lg hover:border-[#DEC05F]/70' // 
                 }
               `}
               // Staggered delay for interactive entrance

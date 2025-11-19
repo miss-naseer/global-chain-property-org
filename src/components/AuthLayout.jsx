@@ -1,4 +1,3 @@
-// src/components/AuthLayout.js
 import React from 'react';
 import { motion } from 'framer-motion';
 import logoImage from '../assets/image1.png'; 

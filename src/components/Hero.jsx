@@ -1,4 +1,3 @@
-// src/components/Hero.js
 import React from 'react';
 import backgroundImage from '../assets/herobg1.jpg'; 
 
@@ -7,7 +6,7 @@ const scrollToSection = (id) => {
 };
 const Hero = ({ }) => {
   return (
-    // Min-height to ensure the section is large and impactful
+
     <section className="relative w-full h-screen flex items-center justify-center pt-20"> 
       
       {/* Background Image Container */}
@@ -24,7 +23,6 @@ const Hero = ({ }) => {
       {/* Content Container (z-10 ensures it's above the background) */}
       <div className="relative z-10 text-center max-w-4xl px-6 md:px-0">
 
-        {/* Headline with Animation */}
         <h1 
           className="
             text-6xl md:text-7xl font-extrabold text-[#F5F5DC]
@@ -48,6 +46,17 @@ const Hero = ({ }) => {
           Buy entire homes or just shares — start with any budget.
         </p>
 
+         <p 
+          className="
+            text-xl md:text-2xl text-[#F5F5DC] font-bold 
+            mb-6 max-w-3xl mx-auto
+            animate-fade-in-up duration-700 delay-500
+          "
+          style={{ animationDelay: '500ms' }} // Staggered delay
+        >
+          Get early access by joining our waitlist today!
+        </p>
+
         {/* Action Buttons Container with Animation */}
         <div 
           className="
@@ -57,7 +66,7 @@ const Hero = ({ }) => {
           style={{ animationDelay: '800ms' }} // Staggered delay for buttons
         >
           {/* Primary Button: Browse Properties */}
-          <button  onClick={() => scrollToSection('properties')}
+          {/* <button  onClick={() => scrollToSection('properties')}
             className="
               bg-[#DEC05F] text-white font-semibold 
               py-2 px-4 rounded-lg text-lg 
@@ -66,8 +75,20 @@ const Hero = ({ }) => {
               md:py-1 px-2 rounded-full text-sm md:text-base
             "
           >
-            Browse Properties
-          </button>
+            Join Waitlist
+          </button> */}
+
+          <a
+            className="
+              bg-[#DEC05F] text-white font-semibold text-center
+              py-2 px-4 rounded-lg text-lg 
+              shadow-xl shadow-[#DEC05F]/60 
+              transition duration-300 ease-in-out hover:scale-105
+              md:py-2 px-4 rounded-full text-sm md:text-base
+            "
+          >
+            Join Waitlist
+          </a>
 
           {/* Secondary Button: Learn How It Works (Transparent/Ghost style) */}
           <button onClick={() => scrollToSection('how-it-works')}
@@ -78,12 +99,12 @@ const Hero = ({ }) => {
               md:py-2 px-4 rounded-full text-sm md:text-base
             "
           >
-            Learn How It Works
+            How It Works
           </button>
         </div>
       </div>
 
-      {/* Optional: Add 3-Step Graphic placement here */}
+
     </section>
   );
 };

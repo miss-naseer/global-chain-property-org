@@ -1,7 +1,6 @@
-// src/components/HowItWorks.js
 import React from 'react';
 import { SearchCheckIcon, Scale, Smartphone} from 'lucide-react';
-// Define the steps data (put this outside the component function)
+
 const steps = [
   {
     icon: <SearchCheckIcon/>,
@@ -35,7 +34,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    // Section with generous padding (white space) [cite: 123]
+  
     <section id='how-it-works' className="py-20 md:py-32 bg-white">
       <div className="container mx-auto px-6 md:px-10">
 
@@ -48,7 +47,7 @@ const HowItWorks = () => {
           Own Property the <span className="text-[#DEC05F]">Modern Way</span>
         </h2>
         
-        {/* Sub-title / Slogan */}
+
         <p className="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">
           Simplified investment. Secure records. Global access.
         </p>

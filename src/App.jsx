@@ -1,4 +1,4 @@
-// src/App.js (or main entry file)
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -15,7 +15,7 @@ function App() {
         <Route path="/waitlist" element={<Waitlist />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        {/* Add a catch-all route if needed */}
+
       </Routes>
     </Router>
   );

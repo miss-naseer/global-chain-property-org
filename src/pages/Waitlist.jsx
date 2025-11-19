@@ -1,4 +1,3 @@
-// src/pages/Waitlist.js
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import waitlistBackground from '../assets/waitlist1.svg'; 
@@ -95,7 +94,7 @@ const Waitlist = () => {
       >
         <img 
           src={waitlistBackground} 
-          alt="Waitlist specific background" 
+          alt="Waitlist background" 
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Dark overlay with custom content */}

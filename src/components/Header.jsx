@@ -12,7 +12,7 @@ const Header = () => {
     { name: 'How It Works', href: '#how-it-works' }, // Added IDs for scrolling
     { name: 'Properties', href: '#properties' },
     { name: 'FAQs', href: '#faq' },
-    { name: 'Login', href: '#login' },
+    { name: 'Sign Up', href: '/signup' },
   ];
 
   const toggleMenu = () => {
@@ -20,11 +20,11 @@ const Header = () => {
   };
 
   return (
-    // Fixed, slightly elevated header with white background
+
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-10">
 
-        {/* 1. Logo: GlobalChain Property (using custom colors) */}
+
         <div className="p-4">
           <img src={logoImage} alt="" className='w-50 h-50 top-0 absolute left-0 mt-[-70px]' />
         </div>
@@ -54,7 +54,7 @@ const Header = () => {
                 py-2.5 px-6 rounded-full
                 shadow-lg shadow-[#DEC05F]/30 
                 transition duration-300 ease-in-out 
-                hover:bg-opacity-90 hover:scale-[1.02] hover:shadow-xl
+                hover:bg-opacity-90 hover:scale-102 hover:shadow-xl
                 md:py-2 px-4 text-sm 
               "
             >
@@ -89,7 +89,7 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            {/* Wallet button placed at the bottom of the mobile menu for prominence */}
+            
             <a
               href='/waitlist'
               className="

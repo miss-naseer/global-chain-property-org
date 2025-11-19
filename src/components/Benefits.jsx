@@ -1,4 +1,3 @@
-// src/components/Benefits.js
 import React from 'react';
 import { Globe, DollarSign, Lock, TrendingUp, RefreshCw, Users } from 'lucide-react';
 
@@ -44,7 +43,7 @@ const Benefits = () => {
 
         {/* Section Header */}
         <div className="flex justify-center mb-4">
-          <div className="h-1 w-60 bg-[#DEC05F] rounded-full animate-fade-in-up duration-500" />
+          <div className="h-1 w-60 bg-[#DEC05F] rounded-full mb-4 animate-fade-in-up duration-500" />
         </div>
         <h2 className="text-4xl md:text-5xl font-extrabold text-center text-[#222222] mb-4">
           Why Choose <span className="text-[#DEC05F]">GlobalChain?</span>
@@ -59,7 +58,7 @@ const Benefits = () => {
             const BenefitIcon = benefit.icon; 
             
             return (
-              // Benefit Card with Interactive Hover and Staggered Animation
+              
               <div 
                 key={benefit.title}
                 className={`
@@ -78,12 +77,12 @@ const Benefits = () => {
                   <BenefitIcon className="h-6 w-6 text-[#DEC05F] mx-auto" strokeWidth={2.5} />
                 </div>
 
-                {/* Title */}
+                
                 <h3 className="text-xl font-bold text-[#222222] mb-2">
                   {benefit.title}
                 </h3>
                 
-                {/* Description */}
+                
                 <p className="text-gray-900 font-light leading-relaxed">
                   {benefit.description}
                 </p>

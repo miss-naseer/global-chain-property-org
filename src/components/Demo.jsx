@@ -1,19 +1,17 @@
-// src/components/Demo.js
 import React, { useState } from 'react';
 import { MinusCircle, PlusCircle } from 'lucide-react';
 
 const Demo = () => {
   // State for the two main inputs
-  const [propertyValue, setPropertyValue] = useState(200000); // Default $200,000 [cite: 75]
-  const [investmentAmount, setInvestmentAmount] = useState(5000);  // Default $5,000 [cite: 76]
+  const [propertyValue, setPropertyValue] = useState(200000); 
+  const [investmentAmount, setInvestmentAmount] = useState(5000); 
 
-  // Static/Calculated values based on the PRD example
+  // Static/Calculated values
   const estimatedAnnualYield = 6; // Example 6% annual return
   
   // Calculations
-  const ownershipPercentage = ((investmentAmount / propertyValue) * 100).toFixed(2); // e.g., 2.5% [cite: 77]
+  const ownershipPercentage = ((investmentAmount / propertyValue) * 100).toFixed(2); // e.g., 2.5% 
   const annualRentalIncome = (investmentAmount * (estimatedAnnualYield / 100)).toFixed(0);
-  // Rental income is calculated monthly [cite: 78]
   const monthlyRentalIncome = (annualRentalIncome / 12).toFixed(0); 
 
   // Helper for adding/subtracting from investment amount
@@ -102,7 +100,7 @@ const Demo = () => {
               </button>
             </div>
             
-            {/* RIGHT SIDE: Results (Animated via Tailwind's transition utilities) */}
+            {/* RIGHT SIDE: Results  */}
             <div className="bg-white p-8 rounded-lg shadow-inner flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-[#222222] mb-6 border-b pb-3">Your Estimated Results</h3>
               

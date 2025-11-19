@@ -1,4 +1,3 @@
-// src/components/PropertyShowcase.js
 import React from 'react';
 import { Star } from 'lucide-react'; 
 import herobg2 from '../assets/herobg2.jpg';
@@ -11,9 +10,9 @@ const featuredProperties = [
     image: herobg2, 
     title: 'Luxury Villa',
     location: 'Miami, Florida',
-    value: 250000, // $250,000 total value [cite: 54]
-    sharePrice: 250, // Shares from $250 [cite: 55]
-    rating: 4.8, // 4.8/5 rating [cite: 57]
+    value: 250000, 
+    sharePrice: 250, 
+    rating: 4.8, 
   },
   {
     id: 2,
@@ -49,7 +48,7 @@ const formatCurrency = (value) => {
 
 const PropertyShowcase = () => {
   return (
-    // Background is clean white/[#F5F5DC]
+
     <section id='properties' className="py-20 md:py-28 bg-[#F5F5DC]/40">
       <div className="container mx-auto px-6 md:px-10">
 
