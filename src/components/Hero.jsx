@@ -78,7 +78,7 @@ const Hero = ({ }) => {
             Join Waitlist
           </button> */}
 
-          <a
+          <a href="/waitlist"
             className="
               bg-[#DEC05F] text-white font-semibold text-center
               py-2 px-4 rounded-lg text-lg 
