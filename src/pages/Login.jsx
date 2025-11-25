@@ -1,14 +1,16 @@
-// src/pages/Login.js
 import React, { useState } from 'react';
 import AuthLayout from '../components/AuthLayout';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const GOLD = '#DEC05F';
   const [formState, setFormState] = useState({});
 
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Log In attempt...');
+    alert('Login success!');
+    navigate('/marketplace');
   };
 
   return (
