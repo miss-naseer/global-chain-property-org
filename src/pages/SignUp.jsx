@@ -1,14 +1,18 @@
-// src/pages/SignUp.js
 import React, { useState } from 'react';
 import AuthLayout from '../components/AuthLayout';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
   const GOLD = '#DEC05F';
   const [formState, setFormState] = useState({});
 
+  const navigate = useNavigate();
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Sign Up successful!');
+    navigate('/kycpersonal');
   };
 
   return (
